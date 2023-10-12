@@ -1,2 +1,2 @@
-# FullSatck11
+# FullStack11
 FullStack course
