@@ -33,6 +33,14 @@ table {
     background-color: antiquewhite;
 }
 
+#main-photo{
+  border:solid 5px black;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-left: 100px;
+  background-color: beige;
+}
+
 .news-content{
     background-color: rgb(82, 82, 194);
 }
