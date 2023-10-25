@@ -17,6 +17,7 @@
       <a href="Tabla.html">Tabla</a>
       <a href="Gol.html">Goles</a>
       <a href="Contacto.html">Contacto</a>
+      <a href="https://www.fcf.com.co/" target="_blank">Sitio web oficial</a>
       <h2>Te damos la bienvenida</h2>
       <img
         src="/Img/img1.jpg"
@@ -27,22 +28,17 @@
     </header>
     <main>
       <p>Te damos la bienvenida al sitio no oficial de la selección colombia</p>
-      <h1>Formulario de contacto</h1>
+      <h3>Formulario de contacto</h3>
 
-      <form action="/Gol.html">
+      <form name="contacto" action="/Gracias.html" method="get">
         <label for="fname">Tu nombre:</label>
-        <input type="text" value="Pepito Perez" />
-        <label for="fname">Tu email:</label>
-        <input type="text" value="pepito@gmail.com"/>
-        <label for="fname">Tu mensaje:</label>
-        <textarea name="mensaje" id="" cols="30" rows="8"></textarea>
+        <input type="text" name="nombre"placeholder="pepito peres" required />
+        <label for="femail">Tu email:</label>
+        <input type="text" name="email" placeholder="pepito@gmail.com" required/>
+        <label for="fmensaje">Tu mensaje:</label>
+        <textarea name="mensaje" cols="30" rows="8" required></textarea>
         <br />
-        <button
-          type="button"
-          onclick="alert('Muchas gracias! tu mensaje fue enviado...')"
-        >
-          Enviar
-        </button>
+        <input type="submit" value="Enviar">
       </form>
     </main>
     <footer>
