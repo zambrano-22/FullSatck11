@@ -4,7 +4,8 @@
   font-family: "fcf";
   font-weight: 400;
   font-display: swap;
-  src: url(http://fcf.com.co/wp-content/uploads/2023/04/FCFV7-Regular.ttf) format("truetype");
+  src: url(http://fcf.com.co/wp-content/uploads/2023/04/FCFV7-Regular.ttf)
+    format("truetype");
 }
 
 * {
@@ -86,8 +87,45 @@ h1 h2 {
   margin-left: -16px;
 }
 
-#sect-vector-news{
+#sect-vector-news {
   flex-direction: row;
+}
+
+#section-galery{
+  margin-top: 30px;
+  margin-bottom: -20px;
+}
+
+#sect-galery-cont{
+  flex-direction: row;
+  align-self: flex-start !important;
+  background-position: top left;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+#sect-galery-vector{
+  background-position: top center;
+  background-size: auto;
+  background-image: url(/Img/vector-img.png);
+  align-self: center !important;
+  justify-content: center;
+  text-align: left;
+  align-items: center;
+  flex-direction: column;
+  max-width: 350px;
+  height: 500px;
+}
+
+#content-galery{
+  justify-content: center;
+  align-self: center !important;
+  align-items: center;
+  flex-direction: row;
+}
+
+#layout-wrapper{
+  align-self: center;
 }
 
 .header {
@@ -137,13 +175,13 @@ h1 h2 {
 .slider-fig {
   position: relative;
   left: 0;
-  width: 400%; /* width dikali slide */
+  width: 400%;
   animation: 10s slide infinite;
 }
 
 .slide {
   position: relative;
-  width: 25%; /* width dibagi slide */
+  width: 25%;
   float: left;
 }
 
@@ -204,6 +242,49 @@ h1 h2 {
   color: #f5f5f5;
   margin: 20px 0 10px 10px;
   font-size: 62.5%;
+}
+
+.sect-galery-text{
+  align-self: center;
+  color: #f5f5f5;
+  font-size: 40px;
+}
+
+.list-galery{
+  width: 100%;
+}
+
+.layout-galery{
+  columns: 3;
+  display: flex;
+  flex-flow: row wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.layout-item{
+  border-radius: 20px;
+  box-shadow: 0 0 5px 0 #424242;
+  overflow: hidden;
+  line-height: 1.6;
+  position: relative;
+}
+
+#layout-wrapper .layout-galery{
+  --gutter: 30px;
+  --columns: 3;
+}
+
+.layout-galery[data-layout=grid]:not(.isotope) {
+  display: grid;
+  gap: var(--gutter);
+  grid-template-columns: repeat(var(--columns), minmax(0,1fr));
+}
+
+.list-galery .layout-galery{
+  --columns: 2;
 }
 
 .news-btm-min {
