@@ -8,11 +8,17 @@
     format("truetype");
 }
 
+@font-face {
+  font-family: 'fcf1';
+  src: url('/wp-content/uploads/useanyfont/478fcf1.woff2') format('woff2'),
+    url('/wp-content/uploads/useanyfont/478fcf1.woff') format('woff');
+    font-display: auto;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "fcf";
   font-size: 20px;
 }
 
@@ -31,6 +37,9 @@ img {
 
 a {
   font-weight: bold;
+  font-family: 'fcf1' !important;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 h1,
@@ -38,6 +47,7 @@ h2,
 h3,
 h4 {
   line-height: 1.4;
+  font-family: 'fcf1' !important;
 }
 
 table {
@@ -48,7 +58,9 @@ table {
 th,
 td {
   text-align: left;
+  cursor: pointer;
   padding: 8px;
+  font-family: 'fcf1' !important;
 }
 
 tr:nth-child(even) {
@@ -328,6 +340,41 @@ th {
   margin-left: auto;
   margin-right: auto;
   width: 1100px;
+}
+
+.section-table {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  margin-bottom: 50px;
+  margin-left: 120px;
+  margin-top: 50px;
+}
+
+.table-title{
+  color: #275db2;
+  font-size: 40px;
+}
+
+.footer-logo{
+  display: block;
+  background-color: #275db2;
+  width: 100%;
+}
+
+.footer-title{
+  color: #f5f5f5;
+  font-family: "fcf1";
+  font-weight: bold;
+  font-size: small;
+}
+
+.calendar-links a {
+  font-size: 700;
+  color: #001b79;
+  text-decoration: none;
 }
 
 #layout-wrapper .layout-galery {
