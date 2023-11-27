@@ -9,10 +9,10 @@
 }
 
 @font-face {
-  font-family: 'fcf1';
-  src: url('/wp-content/uploads/useanyfont/478fcf1.woff2') format('woff2'),
-    url('/wp-content/uploads/useanyfont/478fcf1.woff') format('woff');
-    font-display: auto;
+  font-family: "fcf1";
+  src: url("/wp-content/uploads/useanyfont/478fcf1.woff2") format("woff2"),
+    url("/wp-content/uploads/useanyfont/478fcf1.woff") format("woff");
+  font-display: auto;
 }
 
 * {
@@ -37,7 +37,7 @@ img {
 
 a {
   font-weight: bold;
-  font-family: 'fcf1' !important;
+  font-family: "fcf1" !important;
   text-decoration: none;
   cursor: pointer;
 }
@@ -47,7 +47,7 @@ h2,
 h3,
 h4 {
   line-height: 1.4;
-  font-family: 'fcf1' !important;
+  font-family: "fcf1" !important;
 }
 
 table {
@@ -60,7 +60,7 @@ td {
   text-align: left;
   cursor: pointer;
   padding: 8px;
-  font-family: 'fcf1' !important;
+  font-family: "fcf1" !important;
 }
 
 tr:nth-child(even) {
@@ -185,7 +185,7 @@ th {
   color: #f5f5f5;
 }
 
-#table-calendar{
+#table-calendar {
   font-family: "Roboto" !important;
 }
 
@@ -325,11 +325,30 @@ th {
   width: 100%;
 }
 
+#layout-wrapper .layout-galery {
+  --gutter: 30px;
+  --columns: 3;
+}
+
+.layout-galery[data-layout="grid"]:not(.isotope) {
+  display: grid;
+  gap: var(--gutter);
+  grid-template-columns: repeat(var(--columns), minmax(0, 1fr));
+}
+
+.list-galery .layout-galery {
+  --columns: 2;
+}
+
 .layout-item {
   border-radius: 20px;
   box-shadow: 0 0 5px 0 #424242;
   overflow: hidden;
   line-height: 1.6;
+  position: relative;
+}
+
+.layout-item img {
   position: relative;
 }
 
@@ -353,18 +372,18 @@ th {
   margin-top: 50px;
 }
 
-.table-title{
+.table-title {
   color: #275db2;
   font-size: 40px;
 }
 
-.footer-logo{
+.footer-logo {
   display: block;
   background-color: #275db2;
   width: 100%;
 }
 
-.footer-title{
+.footer-title {
   color: #f5f5f5;
   font-family: "fcf1";
   font-weight: bold;
@@ -375,6 +394,18 @@ th {
   font-size: 700;
   color: #001b79;
   text-decoration: none;
+}
+
+.table-position {
+  margin: 20px 0;
+}
+
+thead th:hover {
+  background-color: #fce200;
+}
+
+tbody td {
+  border-color: #ddd;
 }
 
 #layout-wrapper .layout-galery {
