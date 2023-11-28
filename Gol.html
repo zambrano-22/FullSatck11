@@ -57,7 +57,49 @@
           </div>
         </div>
         <div id="sect-video" class="list-galery">
-         
+          <div class="container">
+            <div class="video-container">
+              <div class="video">
+                <video muted src="/Video/conferencia.mp4"></video>
+              </div>
+              <div class="video">
+                <video muted src="/Video/entrenamiento.mp4"></video>
+              </div>
+              <div class="video">
+                <video
+                  muted src="/Video/vuelo.mp4"
+                ></video>
+              </div>
+              <div class="video">
+                <video
+                  muted
+                  src="/Video/entrenamiento.mp4"
+                ></video>
+              </div>
+              <div class="video">
+                <video
+                  muted
+                  src="/Video/admin.mp4"
+                ></video>
+              </div>
+              <div class="video">
+                <video
+                  muted
+                  src="/Video/conferencia.mp4"
+                ></video>
+              </div>
+            </div>
+
+            <div class="popup-video">
+              <span>&times;</span>
+              <video
+                muted
+                autoplay
+                controls
+                src="/Video/conferencia.mp4"
+              ></video>
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -68,5 +110,17 @@
         Copyright © 2023 FCF Federación Colombiana de Fútbol
       </p>
     </footer>
+    <script>
+      document.querySelectorAll(".video-container video").forEach((vid) => {
+        vid.onclick = () => {
+          document.querySelector(".popup-video").style.display = "block";
+          document.querySelector(".popup-video video").src =
+            vid.getAttribute("src");
+        };
+      });
+      document.querySelector(".popup-video span").onclick = () => {
+        document.querySelector(".popup-video").style.display = "none";
+      };
+    </script>
   </body>
 </html>
