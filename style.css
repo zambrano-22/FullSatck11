@@ -72,6 +72,10 @@ th {
   color: white;
 }
 
+textarea {
+  resize: vertical;
+}
+
 #bd-header {
   background-position: 50%;
   background-size: cover;
@@ -191,8 +195,13 @@ th {
 
 #section-video {
   background-color: #275db2;
-  border-top-left-radius: 30px;
-  margin: 20px 0;
+  margin: 20px auto 50px;
+}
+
+#section-form {
+  background-color: #275db2;
+  padding-bottom: 40px;
+  margin: 20px auto 50px;
 }
 
 #video-vector {
@@ -500,6 +509,84 @@ tbody td {
   font-weight: bolder;
   z-index: 100;
   cursor: pointer;
+}
+
+.form-main {
+  width: 533px;
+  background-image: none;
+  box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.4);
+  margin: 20px auto 20px;
+  color: #111111;
+  background-color: #ffffff;
+  border-radius: 20px !important;
+  position: relative;
+  font-size: 1rem;
+  height: auto !important;
+}
+
+.form-block {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.form-vertical {
+  padding: 23px;
+}
+
+.form-block .form-vertical {
+  margin-left: -15px;
+  width: calc(100% + 15px);
+}
+
+.form-group {
+  text-align: start;
+  width: 100%;
+  margin-bottom: 15px;
+  padding-left: 15px;
+}
+
+.label {
+  font-weight: normal;
+}
+
+.u-border {
+  border-color: #e5e5e5;
+  border-style: solid;
+}
+
+.u-grey {
+  color: #111111;
+  background-color: #e5e5e5;
+}
+
+.form-input {
+  border-radius: 10px !important;
+}
+
+.f-input {
+  display: block;
+  width: 100%;
+  padding: 10px 12px;
+  background-image: none;
+  background-clip: padding-box;
+  border: none;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  height: auto;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  text-align: center;
+  margin-left: 15px;
+  padding: 10px 30px;
+  border-radius: 10px !important;
+  border-width: 5px;
+  border-style: solid;
+  cursor: pointer;
+  font-size: 1.25rem;
 }
 
 @media (max-width: 768px) {

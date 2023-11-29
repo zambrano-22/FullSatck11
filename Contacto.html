@@ -9,6 +9,7 @@
       type="image/x-icon"
       href="/Img/Escudo_de_la_Federación_Colombiana_de_Fútbol.png"
     />
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -48,23 +49,65 @@
     </header>
     <main>
       <p>Te damos la bienvenida al sitio no oficial de la selección colombia</p>
-      <h3>Formulario de contacto</h3>
+      <h1 class="table-title">Formulario de contacto</h1>
 
-      <form name="contacto" action="/Gracias.html" method="get">
-        <label for="fname">Tu nombre:</label>
-        <input type="text" name="nombre" placeholder="pepito peres" required />
-        <label for="femail">Tu email:</label>
-        <input
-          type="text"
-          name="email"
-          placeholder="pepito@gmail.com"
-          required
-        />
-        <label for="fmensaje">Tu mensaje:</label>
-        <textarea name="mensaje" cols="30" rows="8" required></textarea>
-        <br />
-        <input type="submit" value="Enviar" />
-      </form>
+      <section id="section-form">
+        <div id="sect-vector-news" class="logo">
+          <div class="logo"></div>
+          <div id="sect-vector" class="logo">
+            <h2 id="video-vector">Contactenos</h2>
+          </div>
+        </div>
+        <div class="form-main">
+          <form
+            action="/Gracias.html"
+            class="form-block form-vertical"
+            source="email"
+            name="form"
+            method="get"
+          >
+            <div class="form-group">
+              <label for="name-4c18" class="label">Name</label>
+              <input
+                type="text"
+                placeholder="Enter your Name"
+                id="name-4c18"
+                name="name"
+                class="form-control form-input f-input u-border u-grey"
+                required=""
+              />
+            </div>
+            <div class="form-group">
+              <label for="email-4c18" class="label">Email</label>
+              <input
+                type="email"
+                placeholder="Enter a valid email address"
+                id="email-4c18"
+                name="email"
+                class="form-control form-input f-input u-border u-grey"
+                required=""
+              />
+            </div>
+            <div class="form-group">
+              <label for="message-4c18" class="label">Message</label>
+              <textarea
+                placeholder="Enter your message"
+                rows="4"
+                cols="50"
+                id="message-4c18"
+                name="message"
+                class="form-input form-control f-input u-border u-grey"
+                required=""
+              ></textarea>
+            </div>
+            <input
+              type="submit"
+              value="Enviar"
+              class="btn-primary form-group"
+            />
+          </form>
+        </div>
+      </section>
     </main>
     <footer class="footer-logo">
       <img src="/Img/Logo-blanco.png" alt="Federacion Colombiana de Futbol" />
